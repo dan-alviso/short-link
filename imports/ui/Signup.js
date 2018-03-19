@@ -12,7 +12,7 @@ export default class Signup extends React.Component {
   onSubmit(e) {
     e.preventDefault();
 
-    let emails = this.refs.email.value.trim();
+    let email = this.refs.email.value.trim();
     let password = this.refs.password.value.trim();
 
     Accounts.createUser({email, password}, (err) => {
