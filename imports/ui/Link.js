@@ -6,7 +6,13 @@ export default class Link extends React.Component {
     return (
       <div>
         <h1>Your Links</h1>
-        <button onClick={() => browserHistory.push('/')}>Logout</button>
+        <button 
+          onClick={() => 
+            browserHistory.push('/')
+          }
+        >
+          Logout
+        </button>
       </div>
     );
   }
